@@ -30,7 +30,7 @@ const projects = [
     tags: ["React", "Node.js", "Express", "PostgreSQL", "REST APIs"],
     githubLink: "https://github.com/krishmajumdar12/Leaps",
     liveLink: "https://leapstravel.com",
-    demoVideo: "/leapsdemo.mov",
+    demoVideo: "/demos/leapsdemo.mov",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const projects = [
     ],
     tags: ["Python", "REST APIs", "Cron"],
     githubLink: "https://github.com/krishmajumdar12/DailyDigestBot",
-    demoVideo: '/DailyDigestBotDemo.mov'
+    demoVideo: '/demos/DailyDigestBotDemo.mov'
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ const projects = [
     tags: ["JavaScript", "HTML", "CSS"],
     githubLink: "https://github.com/krishmajumdar12/LockedIN",
     liveLink: null,
-    demoVideo: "/LockedINDemo.mov",
+    demoVideo: "/demos/LockedINDemo.mov",
   },
   {
     id: 4,
@@ -103,7 +103,7 @@ const projects = [
     tags: ["C++", "C", "Lex", "Yacc", "Unix"],
     githubLink: null,
     liveLink: null,
-    demoVideo: '/myshelldemo.mov',
+    demoVideo: '/demos/myshelldemo.mov',
   },
   {
     id: 5,
