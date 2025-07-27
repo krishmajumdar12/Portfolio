@@ -1,0 +1,362 @@
+.about-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+    padding: 80px 0 60px;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Introduction Section */
+  .intro-section {
+    margin-bottom: 80px;
+  }
+  
+  .intro-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .intro-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cbd5e0;
+    margin-bottom: 25px;
+  }
+  
+  .intro-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 6px solid transparent;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background-clip: padding-box;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 90% 20% !important;
+    transform: scale(1.45);
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .profile-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Education Section */
+  .education-section {
+    margin-bottom: 80px;
+  }
+  
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+  }
+  
+  .education-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+  }
+  
+  .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .degree-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #667eea;
+    margin: 0;
+  }
+  
+  .education-date {
+    font-size: 0.9rem;
+    color: #a0aec0;
+    background: rgba(102, 126, 234, 0.2);
+    padding: 5px 12px;
+    border-radius: 15px;
+    white-space: nowrap;
+  }
+  
+  .institution-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e2e8f0;
+    margin: 0 0 15px 0;
+  }
+  
+  .education-description {
+    color: #cbd5e0;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .coursework h5 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .coursework ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+  }
+  
+  .coursework li {
+    color: #cbd5e0;
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .coursework li::before {
+    content: "▶";
+    color: #667eea;
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    margin-bottom: 60px;
+  }
+  
+  .experience-timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+  }
+  
+  .experience-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 40px;
+  }
+  
+  .experience-dot {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.3);
+  }
+  
+  .experience-content {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .job-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #667eea;
+    margin: 0;
+  }
+  
+  .experience-date {
+    font-size: 0.9rem;
+    color: #a0aec0;
+    background: rgba(102, 126, 234, 0.2);
+    padding: 5px 12px;
+    border-radius: 15px;
+    white-space: nowrap;
+  }
+  
+  .company-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #e2e8f0;
+    margin: 0 0 15px 0;
+  }
+  
+  .experience-description {
+    color: #cbd5e0;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-tag {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+    color: #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-tag:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 60px 0 40px;
+    }
+    
+    .intro-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+    
+    .about-title {
+      font-size: 2.5rem;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .education-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .education-header,
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+    
+    .experience-timeline {
+      padding-left: 20px;
+    }
+    
+    .experience-item {
+      padding-left: 30px;
+    }
+    
+    .experience-dot {
+      left: -30px;
+    }
+    
+    .profile-image {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-content {
+      padding: 0 15px;
+    }
+    
+    .about-title {
+      font-size: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .education-card,
+    .experience-content {
+      padding: 20px;
+    }
+    
+    .profile-image {
+      width: 200px;
+      height: 200px;
+    }
+  }

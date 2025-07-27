@@ -1,0 +1,217 @@
+/* Skills.css */
+
+.skills1-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    color: #ffffff;
+  }
+  
+  /* Hero Section */
+  .hero1-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 5% 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero1-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+  
+  .gradient1-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero1-subtitle {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Skills Main Content */
+  .skills1-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 5% 80px;
+  }
+  
+  /* Skill Sections */
+  .skill1-section {
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill1-section:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Section Headers */
+  .section1-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section1-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .purple1-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .blue1-gradient {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+  
+  .green1-gradient {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  }
+
+  .red1-gradient {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  }
+  
+  .section1-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  /* Skills Grid */
+  .skills1-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Skill Cards */
+  .skill1-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .skill1-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.1);
+  }
+  
+  .skill1-icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.2rem;
+  }
+  
+  .skill1-name {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero1-section {
+      padding: 60px 5% 15px;
+    }
+  
+    .hero1-title {
+      font-size: 2.2rem;
+    }
+  
+    .hero1-subtitle {
+      font-size: 1rem;
+    }
+  
+    .skill1-section {
+      padding: 2rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  
+    .skills1-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .section1-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .section1-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero1-section {
+      padding: 50px 5% 10px;
+    }
+  
+    .hero1-title {
+      font-size: 1.8rem;
+    }
+  
+    .hero1-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .skill1-section {
+      padding: 1.5rem 1rem;
+      margin-bottom: 2rem;
+    }
+  
+    .skill1-card {
+      padding: 1rem;
+    }
+  
+    .skills1-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .section1-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .section1-title {
+      font-size: 1.3rem;
+    }
+  }

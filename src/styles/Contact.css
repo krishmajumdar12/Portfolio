@@ -1,0 +1,179 @@
+.contact-container {
+    min-height: 50vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+    padding: 80px 0 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .contact-header {
+    margin-bottom: 80px;
+  }
+  
+  .contact-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    color: #cbd5e0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Contact Methods */
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .contact-method {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .contact-method:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.4);
+  }
+  
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .email-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .linkedin-icon {
+    background: linear-gradient(135deg, #0077b5 0%, #0e76a8 100%);
+    color: white;
+  }
+  
+  .github-icon {
+    background: linear-gradient(135deg, #333 0%, #24292e 100%);
+    color: white;
+  }
+  
+  .contact-method:hover .contact-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-details h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+  }
+  
+  .contact-link {
+    font-size: 1.1rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .contact-link:hover {
+    color: #764ba2;
+    transform: scale(1.05);
+  }
+  
+  .contact-details p {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 60px 0 40px;
+    }
+  
+    .contact-title {
+      font-size: 2.5rem;
+    }
+  
+    .contact-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .contact-methods {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+  
+    .contact-method {
+      padding: 30px 20px;
+    }
+  
+    .contact-header {
+      margin-bottom: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-content {
+      padding: 0 15px;
+    }
+  
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-subtitle {
+      font-size: 1rem;
+    }
+  
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .contact-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
