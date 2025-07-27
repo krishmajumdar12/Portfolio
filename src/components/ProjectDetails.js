@@ -210,6 +210,11 @@ const ProjectDetails = () => {
                         <source src={project.demoVideo} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
+                      {/*project.demoVideo && (
+                        <div className="demo3-video">
+                          <img src={project.demoVideo} alt={`${project.title} demo`} className="video3-player" />
+                        </div>
+                      )*/}
                     </div>
                   )}
                   {project.screenshots && (
